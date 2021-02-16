@@ -1,11 +1,14 @@
 ﻿using System;
 using ToHModels;
+using ToHBL;
 //dotnet add reference ../ToHModels
-
+//when would you choose to create a new project vs a new namespace?
 namespace ToHUI
 {
     class Program
     {
+
+        private IHeroBL heroBL = new HeroBL();
         static void Main(string[] args)
         {
             // create hero method/logic
@@ -29,7 +32,12 @@ namespace ToHUI
             Console.WriteLine("Set the element type of the hero: ");
             newHero.ElementType = Enum.Parse<Element>(Console.ReadLine());
 
-            Console.WriteLine($"Hero Created with details: \n\tname = {newHero.HeroName} \n\tsuperPower: {newHero.SuperPower.Name} \n\ttype: {newHero.ElementType}");
-        }
+            heroBL.addHero(newHero);
+            foreach(var item in HeroBL.GetHeroes()){
+                Console.WriteLine($"Hero Details: \n\tname = {item.HeroName} \n\tsuperPower: {item.SuperPower.Name} \n\ttype: {item.ElementType}");
+        
+            }
+
+ }
     }
 }
