@@ -32,4 +32,4 @@ Reference Types
     - The value that a variable reference type holds is null until you instantiate an object and assign the reference in memory.
     - The value of the reference variable is technically just the value of the memory where the object is stored in the heap - hence, it is a "reference" to the object in memory
     - The value that a variable reference type holds is a reference to the object in the heap
-    - Strings are technically reference types - a string is basically a list of chars (which are value types) "strung" together in a string object in the string pool
+    - Strings are technically reference types - a string is basically a list of chars (which are value types) "strung" together in a string object in the string intern
