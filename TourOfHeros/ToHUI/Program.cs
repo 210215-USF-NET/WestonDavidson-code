@@ -1,4 +1,6 @@
 ﻿using System;
+using ToHModels;
+//dotnet add reference ../ToHModels
 
 namespace ToHUI
 {
@@ -6,7 +8,9 @@ namespace ToHUI
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Hero newHero = new Hero();
+            newHero.HeroName = "Spiderman";
+            Console.WriteLine(newHero.HeroName);
         }
     }
 }

@@ -10,3 +10,5 @@ Example Application
 -   When you're prototyping, try to limit your properties. You want to lay groundwork more than you want to create full implementation. Full implmementation can come later.
 -   Keep your models lean - don't add unnecessary properties
 -   This is also a test of scalability once you want to add additional properties or elements
+
+Classlib can be used as a class library which your primary application references
