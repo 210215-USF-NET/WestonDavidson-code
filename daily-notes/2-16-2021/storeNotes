@@ -1,0 +1,12 @@
+P0 Notes
+-   Have a theme! Make your store unique.
+
+Example Application
+-   Marielle is using a whiteboard to create a wireframe to sketch out her Application
+-   She lists the functionality requirements
+-   She has the methods she wants, so how will she go about designing her application?
+-   Think about design before implementation or anything else
+-   Consider things like classes, interfaces that will be implemented based on what sort of things will be needed (relationships, is-a, has-a relationships, properties etc.)
+-   When you're prototyping, try to limit your properties. You want to lay groundwork more than you want to create full implementation. Full implmementation can come later.
+-   Keep your models lean - don't add unnecessary properties
+-   This is also a test of scalability once you want to add additional properties or elements
