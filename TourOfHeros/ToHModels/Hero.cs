@@ -53,6 +53,7 @@ namespace ToHModels
 
         public int Hp {get; set;}
 
+        public SuperPower SuperPower { get; set; }
         
     }
 }
