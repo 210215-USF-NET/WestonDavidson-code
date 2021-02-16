@@ -1,7 +1,7 @@
-P0 Notes
+# P0 Notes
 -   Have a theme! Make your store unique.
 
-Example Application
+# Example Application
 -   Marielle is using a whiteboard to create a wireframe to sketch out her Application
 -   She lists the functionality requirements
 -   She has the methods she wants, so how will she go about designing her application?
@@ -11,4 +11,4 @@ Example Application
 -   Keep your models lean - don't add unnecessary properties
 -   This is also a test of scalability once you want to add additional properties or elements
 
-Classlib can be used as a class library which your primary application references
+## Classlib declaration for a project in dotnet can be used as a class library which your primary application references :)
