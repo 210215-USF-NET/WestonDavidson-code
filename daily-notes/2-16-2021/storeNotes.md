@@ -12,3 +12,17 @@
 -   This is also a test of scalability once you want to add additional properties or elements
 
 ## Classlib declaration for a project in dotnet can be used as a class library which your primary application references :)
+
+# Store App Notes
+-   Naming format: FirstName_LastName-P0
+-   Include a readme in your github repo for the project
+-   Required to provide an MVP - a minimum viable product
+-   Try to meet as many of the minimum requirements as possible - what should a store app be able to do?
+-   Don't just reach the minimum requirements - go further beyond!
+-   If you don't have the whole project planned beforehand, do vertical development instead of horizontal
+    -   Build things as you need them - jump between things and you won't get bored when developing business logic
+-   Don't forget about exception handling!
+-   Due Date - March 3rd!
+-   This week - logic and UI
+-   Next week - database (probably since it's SQL week)
+-   Week after that - Presentation prep!
