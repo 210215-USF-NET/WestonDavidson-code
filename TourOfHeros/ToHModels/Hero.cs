@@ -33,7 +33,7 @@ namespace ToHModels
 
         private String heroName;
 
-        private int hp;
+        private int hP;
         
 
         public String HeroName { 
@@ -51,9 +51,11 @@ namespace ToHModels
         
         public Element ElementType {get; set;}
 
-        public int Hp {get; set;}
+        public int HP {get; set;}
 
         public SuperPower SuperPower { get; set; }
         
+        public override string ToString() => $"Hero Details: \n\t name: {this.HeroName} \n\t hp: {this.HP} \n\t element: {this.ElementType} \n\t superpower: {this.SuperPower.ToString()}";
+
     }
 }

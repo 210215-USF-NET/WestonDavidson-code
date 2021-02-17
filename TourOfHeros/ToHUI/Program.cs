@@ -8,7 +8,7 @@ namespace ToHUI
     class Program
     {
 
-        private IHeroBL heroBL = new HeroBL();
+        private static IHeroBL heroBL = new HeroBL();
         static void Main(string[] args)
         {
             // create hero method/logic
@@ -17,7 +17,7 @@ namespace ToHUI
             newHero.HeroName = Console.ReadLine();
 
             Console.WriteLine("Enter an HP value: ");
-            newHero.Hp = Convert.ToInt32(Console.ReadLine());
+            newHero.HP = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine("Enter SuperPower details: ");
 
             newHero.SuperPower = new SuperPower();
@@ -32,12 +32,11 @@ namespace ToHUI
             Console.WriteLine("Set the element type of the hero: ");
             newHero.ElementType = Enum.Parse<Element>(Console.ReadLine());
 
-            heroBL.addHero(newHero);
-            foreach(var item in HeroBL.GetHeroes()){
-                Console.WriteLine($"Hero Details: \n\tname = {item.HeroName} \n\tsuperPower: {item.SuperPower.Name} \n\ttype: {item.ElementType}");
-        
+            heroBL.AddHero(newHero);
+            foreach(var item in heroBL.GetHeroes()){
+                Console.WriteLine(item.ToString());
             }
 
- }
+        }
     }
 }

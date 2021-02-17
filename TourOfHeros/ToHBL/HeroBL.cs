@@ -5,11 +5,13 @@ using ToHModels;
 
 namespace ToHBL
 {
-    public class HeroBL : IHeroBL
+    //implements interface IHeroBL
+    public class HeroBL:IHeroBL
     {
 
+        //instantiate hero repository from ToHDL Data Layer project
         private IHeroRepository repo = new HeroRepoSC();
-        public void AddHero(HeroBL newHero){
+        public void AddHero(Hero newHero){
             //TODO add BL
             repo.AddHero(newHero);
         }
