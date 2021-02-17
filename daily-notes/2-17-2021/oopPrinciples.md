@@ -41,7 +41,24 @@
 - aggregation describes a relationship between two or more objects where one object contains multiple instances of other objects
 - the child can exist independently from the parent
     -   a department has many employees
+
 # association
 - association describes a uses-a keyword
 - the lifecycles of the two objects are entirely separate from one another
     - example: a computer uses a keyboard
+
+
+# encapsulation
+-   treat related data/behavior as a single unit/capsule
+-   implemented via data hiding and wrapping (grouping logic in classes, assemblies, and namespaces)
+-   wrapping focuses on encapsulating the complex data in order to present a simpler view for the user.
+-   data hiding focuses on (?)
+
+# Access Modifiers
+-   access modifiers SPECIFY access levels
+-   public - available to everything!
+-   private - available only to itself/declared class
+-   protected - only available in the declared class and in derived/child classes
+-   internal - available to anything in the same namespace
+-   protected internal - same namespace AND derived/child classes in other namespaces
+-   private protected - check over recording, missed this one
