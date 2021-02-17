@@ -11,6 +11,7 @@ namespace ToHBL
 
         //instantiate hero repository from ToHDL Data Layer project
         private IHeroRepository repo = new HeroRepoSC();
+
         public void AddHero(Hero newHero){
             //TODO add BL
             repo.AddHero(newHero);
