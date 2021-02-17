@@ -41,6 +41,7 @@ namespace ToHUI
                         }
                         catch(Exception){
                             Console.WriteLine("Invalid Input");
+                            
                             continue;
                         }
                         break;
