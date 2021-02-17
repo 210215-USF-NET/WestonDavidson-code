@@ -32,3 +32,16 @@
 -   promotes code reusability
 -   IS A IS A IS A IS A
 -   you can inherit from multiple interfaces but you can only inherit from one class
+
+# Composition
+- composition describes has-a relationship
+- the child cannot exist independent of the parent
+    -   example an order has multiple line items
+# aggregation
+- aggregation describes a relationship between two or more objects where one object contains multiple instances of other objects
+- the child can exist independently from the parent
+    -   a department has many employees
+# association
+- association describes a uses-a keyword
+- the lifecycles of the two objects are entirely separate from one another
+    - example: a computer uses a keyboard
