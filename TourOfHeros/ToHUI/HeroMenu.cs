@@ -37,7 +37,12 @@ namespace ToHUI
                 {
 
                     case "0":
-                        CreateHero();
+                        try {CreateHero();
+                        }
+                        catch(Exception){
+                            Console.WriteLine("Invalid Input");
+                            continue;
+                        }
                         break;
                     case "1":
                         GetHeros();
