@@ -3,3 +3,7 @@
 -   csharp is both pass by value and pass by reference
 -   look over the pass by reference ppt!
 -   if you got big parts of your code, reference them :)
+-   RPA might be worth looking into
+-   UI path and RPA
+-   pegRP
+-   in revature connect check out tech talks - there are mini courses there!
