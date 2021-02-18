@@ -41,8 +41,8 @@ namespace ToHModels
             return heroName;
         } 
         set{
-            if (value.Equals(null)){
-                Console.WriteLine("value is null, throw exception");
+            if (value == null || value.Equals("")){
+               throw new ArgumentNullException("Hero name can't be empty or null");
             }
 
             heroName = value;
