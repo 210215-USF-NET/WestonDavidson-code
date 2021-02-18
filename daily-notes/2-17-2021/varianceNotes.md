@@ -13,6 +13,7 @@
     - think of it like putting the type into the container that is the bigger type
 - Unboxing is DOWNcasting, or casting to a subtype. Uses explicit type casting <>
     - like taking the type out of the box, so you have a smaller box
+- if you might potentially use data, the compiler will make you use explicit type casting.
 
 # Type checking
 - the ```is``` operator is used to check if the runtime type of an object is compatible with the given type.

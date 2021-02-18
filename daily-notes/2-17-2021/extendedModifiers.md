@@ -29,3 +29,4 @@
     - required to extend or modify the abstract or virtual implementation of a property, indexer or event
 
 - worth reading about "what's the difference between method hiding and method overriding?"
+- private public protected internal - the access modifiers

@@ -1,3 +1,9 @@
+# OOP Pillars
+-   abstraction
+-   encapsulation
+-   inheritance
+-   polymorphism
+
 # abstraction
 -   a technique for dealing with complexity by providing users with a simple interface to hide complex details of an operation
 -   example: when we have a menu and options to select, we don't know what's happening under the hood. Hiding the underlying complexity of the program
@@ -23,6 +29,7 @@
 # polymorphism
 -   the whole point of polymorphism is that one interface can have many implementations
 -   sort of related to abstraction as well
+-   presenting the same view for the end user but the input params could be differe, type could be different, etc.
 
 # implementation
 -   hard to understand, read up on this lol - basically different types of polymorphism
