@@ -34,27 +34,31 @@ namespace ToHModels
         private String heroName;
 
         private int hP;
-        
 
-        public String HeroName { 
-        get {
-            return heroName;
-        } 
-        set{
-            if (value == null || value.Equals("")){
-               throw new ArgumentNullException("Hero name can't be empty or null");
+
+        public String HeroName
+        {
+            get
+            {
+                return heroName;
             }
+            set
+            {
+                if (value == null || value.Equals(""))
+                {
+                    throw new ArgumentNullException("Hero name can't be empty or null");
+                }
 
-            heroName = value;
-        } 
+                heroName = value;
+            }
         }
-        
-        public Element ElementType {get; set;}
 
-        public int HP {get; set;}
+        public Element ElementType { get; set; }
+
+        public int HP { get; set; }
 
         public SuperPower SuperPower { get; set; }
-        
+
         public override string ToString() => $"Hero Details: \n\t name: {this.HeroName} \n\t hp: {this.HP} \n\t element: {this.ElementType} \n\t superpower: {this.SuperPower.ToString()}";
 
     }
