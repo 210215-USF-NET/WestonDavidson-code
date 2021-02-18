@@ -14,6 +14,7 @@
 - catch more specific exceptions first, then more general ones
 - the finally block will run with or without exception - it always runs
 - you don't always have to include a finally block, but use it when needed!
+- you want more specific exceptions listed before general 
 
 # additional notes
 - exception gets thrown in business logic a lot, as it's the connector from the data and frontend
