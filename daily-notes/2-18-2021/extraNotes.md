@@ -1,0 +1,4 @@
+-   check over the RegEx ppt in connect/zoho
+-   regex is very highly recommended for validation stuff
+-   csharp is both pass by value and pass by reference
+-   look over the pass by reference ppt!
