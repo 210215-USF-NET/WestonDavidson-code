@@ -19,13 +19,18 @@
     - act - doing the thing you want to test
     - assert - comparing the actual results to your expected outcome
 
+# We are using Xunit as our unit testing framework
+
+
+
 # test driven development
 - write unit tests first without writing the methods
 - we will have a calc thats just empty
 - create unit tests without methods first
 - then create methods that pass those tests
 - does tdd help? questions will be asked after activity
-
+1. write tests that fail
+1. implement code to make tests pass
 
 - factory design pattern for menus might be helpful
 - P0 requires 10 unit tests
@@ -106,4 +111,4 @@ Calculator class
 - Write code that fails (obv), and then code that passes the unit test
 - https://devops.com/the-benefits-of-test-driven-development/
 - https://andrewlock.net/creating-parameterised-tests-in-xunit-with-inlinedata-classdata-and-memberdata/
-- 
+- codesignal is a good code practice site :)
