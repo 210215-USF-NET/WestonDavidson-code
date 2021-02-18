@@ -19,6 +19,13 @@
     - act - doing the thing you want to test
     - assert - comparing the actual results to your expected outcome
 
+# test driven development
+- write unit tests first without writing the methods
+- we will have a calc thats just empty
+- create unit tests without methods first
+- then create methods that pass those tests
+- does tdd help? questions will be asked after activity
+
 
 - factory design pattern for menus might be helpful
 - P0 requires 10 unit tests
