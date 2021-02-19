@@ -1,7 +1,10 @@
 # P0 requirements have been reworded, double check them in discord
 - copy new requirements into notes
+- have most of the user structure finished by next week!!!
+search customer, add customer, navigate and view location inventory, try to have a placeholder order functionality done. Models, business logic should be working. files, static collections, keep data layer far away from business logic if possible.
+- do something similar to class for data stuff with toh
 
-
+- should allow multiple products and multiple KINDS of products in a single order
 # P0 Notes
 -   Have a theme! Make your store unique.
 
