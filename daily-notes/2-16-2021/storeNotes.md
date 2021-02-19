@@ -1,3 +1,7 @@
+# P0 requirements have been reworded, double check them in discord
+- copy new requirements into notes
+
+
 # P0 Notes
 -   Have a theme! Make your store unique.
 
@@ -26,3 +30,11 @@
 -   This week - logic and UI
 -   Next week - database (probably since it's SQL week)
 -   Week after that - Presentation prep!
+
+# log to a JSON file, and every time you run program at a certain date, sorta show that in that folder maybe - new requirements for the project
+
+
+
+# presentation tips:
+- introduce yourself for presentation!
+- make sure in groups, you communicate setup beforehand
