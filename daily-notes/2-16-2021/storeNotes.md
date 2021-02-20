@@ -3,7 +3,7 @@ Store App
 Overview:
     The store app is a software that helps customers purchase products from your business. Designed with functionality that would make virtual shopping much simpler!
 
-Functionality:
+# Functionality:
 - [ ] add a new customer
 - [ ] search customers by name
 - [ ] display details of an order
@@ -15,30 +15,30 @@ Functionality:
 - [ ] Order histories should have the option to be sorted by date (latest to oldest and vice versa) or cost (least expensive to most expensive)
 - [ ] The manager should be able to replenish inventory
 
-Models:
-Customer
-Location
-Orders
-Product
-Note: add as much models as you would need for your design
+# Models:
+- [ ] Customer
+- [ ] Location
+- [ ] Orders
+- [ ] Product
+- Note: add as much models as you would need for your design
 
-Additional requirements:
-Exception Handling
-Input validation
-Logging
-At least 10 unit tests
-Data should be persisted, (no data should be hard coded)
-You should use SQLServer DB
-DB structure should be 3NF
-Should have an ER Diagram
-Code should have xml documentation
+# Additional requirements:
+- [ ] Exception Handling
+- [ ] Input validation
+- [ ] Logging
+- [ ] At least 10 unit tests
+- [ ] Data should be persisted, (no data should be hard coded)
+- [ ] You should use SQLServer DB
+- [ ] DB structure should be 3NF
+- [ ] Should have an ER Diagram
+- [ ] Code should have xml documentation
 
-Tech Stack:
-C#
-SQLServer DB
-EF Core
-Xunit
-Serilog or Nlog
+# Tech Stack:
+- C#
+- SQLServer DB
+- EF Core
+- Xunit
+- Serilog or Nlog
 
 
 # Additional Details
