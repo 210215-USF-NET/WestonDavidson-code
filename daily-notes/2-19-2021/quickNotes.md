@@ -56,6 +56,6 @@
     - might be able to team up with batchmates if someone else gets the same location as you!
 - industry equivalency reports will be available on our portfolio afterwards
 - revature sets up interviews based on the skillset result from this industry equivalency report
-
+- 8 out of 10 clients get sent to one location but those other 20% get relocated, is there a limit to how many times we can be relocated or are there fringe cases where one person gets unlucky and gets reassigned 3 or 4 times
 
 # timesheet portal: https://rev2.force.com/revature/s/
