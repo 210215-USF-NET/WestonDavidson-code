@@ -24,5 +24,7 @@
 - viewing customers
 - viewing inventory
 
+
+
 - next monday will be a hard check on p0
 - MVP on monday!
