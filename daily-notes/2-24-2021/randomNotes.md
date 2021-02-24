@@ -6,3 +6,8 @@
 
 - SQL sublanguages and normalization will likely be asked about in QC
 - transactions will be asked about, but they won't be discussed until tomorrow
+
+# SQL Topic for our group:
+- Functions in SQL Server
+
+- P0 stuff will be covered again tomorrow morning thank the lord
