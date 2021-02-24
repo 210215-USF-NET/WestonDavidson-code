@@ -4,7 +4,7 @@ using System.Collections.Generic;
 
 namespace ToHDL
 {
-    public class HeroRepoSC : IHeroRepository
+    public class HeroRepoSC 
     {
         public List<Hero> GetHeroes(){
             return Storage.AllHeroes;
@@ -17,5 +17,7 @@ namespace ToHDL
         return newHero;
 
         }
+
+        
     }
 }

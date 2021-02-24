@@ -11,6 +11,7 @@ namespace ToHDL
 
         Hero AddHero(Hero newHero);
 
+        Hero GetHeroByName(string Name);
 
     }
 }

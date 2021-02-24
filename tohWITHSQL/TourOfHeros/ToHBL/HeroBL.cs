@@ -25,6 +25,11 @@ namespace ToHBL
             return _repo.GetHeroes();
         }
 
+        public Hero GetHeroByName(string name){
+            //maybe add validation here if the name given is not null or empty string
+            return _repo.GetHeroByName(name);
+        }
+
         
     }
 }

@@ -29,6 +29,10 @@ namespace ToHDL
             return newHero;
         }
 
+
+        public Model.Hero GetHeroByName(string name){
+            return _context.Heroes.Include("Superpowers").Select(x => _mapper.ParseHero(x)).ToList().FirstOrDefault(x => x.HeroName == name);
+        }
         public List<Model.Hero> GetHeroes(){
             //for every hero you get from entity superpowers we want you to parse them and return a list
             //select projects each element in a list to a new form

@@ -6,7 +6,7 @@ using System;
 
 namespace ToHDL
 {
-    public class HeroRepoFile : IHeroRepository
+    public class HeroRepoFile
     {
 
         private string jsonString;
@@ -26,6 +26,7 @@ namespace ToHDL
             
             return newHero;
         }
+        
 
         public List<Hero> GetHeroes()
         {

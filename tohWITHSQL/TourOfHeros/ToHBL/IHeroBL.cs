@@ -7,5 +7,7 @@ namespace ToHBL
     {
         void AddHero(Hero newHero);
         List<Hero> GetHeroes();
+
+        Hero GetHeroByName(string name);
     }
 }
