@@ -13,5 +13,10 @@ namespace ToHDL
 
         Hero GetHeroByName(string Name);
 
+        Hero DeleteHero(Hero hero2BDeleted);
+
+        void UpdateHero(Hero hero2BUpdated);
+        
+
     }
 }

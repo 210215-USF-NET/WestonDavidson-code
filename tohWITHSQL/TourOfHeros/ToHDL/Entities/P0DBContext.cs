@@ -19,8 +19,8 @@ namespace ToHDL.Entities
 
         public virtual DbSet<ElementType> ElementTypes { get; set; }
         public virtual DbSet<Hero> Heroes { get; set; }
+        public virtual DbSet<Person> People { get; set; }
         public virtual DbSet<Superpower> Superpowers { get; set; }
-
 
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
@@ -59,12 +59,32 @@ namespace ToHDL.Entities
                 entity.HasOne(d => d.ElementTypeNavigation)
                     .WithMany(p => p.Heroes)
                     .HasForeignKey(d => d.ElementType)
-                    .HasConstraintName("FK__heroes__elementT__76969D2E");
+                    .HasConstraintName("FK__heroes__elementT__04E4BC85");
+            });
+
+            modelBuilder.Entity<Person>(entity =>
+            {
+                entity.ToTable("people");
+
+                entity.Property(e => e.Id).HasColumnName("id");
+
+                entity.Property(e => e.BirthDate)
+                    .HasColumnType("date")
+                    .HasColumnName("birthDate");
+
+                entity.Property(e => e.Name)
+                    .IsRequired()
+                    .HasMaxLength(100)
+                    .IsUnicode(false)
+                    .HasColumnName("name");
             });
 
             modelBuilder.Entity<Superpower>(entity =>
             {
                 entity.ToTable("superpowers");
+
+                entity.HasIndex(e => e.Hero, "UQ__superpow__44A162CB790F7DF9")
+                    .IsUnique();
 
                 entity.Property(e => e.Id).HasColumnName("id");
 
@@ -85,9 +105,9 @@ namespace ToHDL.Entities
                     .HasColumnName("name");
 
                 entity.HasOne(d => d.HeroNavigation)
-                    .WithMany(p => p.Superpowers)
-                    .HasForeignKey(d => d.Hero)
-                    .HasConstraintName("FK__superpower__hero__797309D9");
+                    .WithOne(p => p.Superpower)
+                    .HasForeignKey<Superpower>(d => d.Hero)
+                    .HasConstraintName("FK__superpower__hero__08B54D69");
             });
 
             OnModelCreatingPartial(modelBuilder);

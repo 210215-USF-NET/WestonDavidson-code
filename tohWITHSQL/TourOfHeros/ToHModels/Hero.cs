@@ -59,6 +59,9 @@ namespace ToHModels
 
         public SuperPower SuperPower { get; set; }
 
+        //the question mark makes the property nullable, or can be null. sort of like "does it exist?"
+        public int? Id {get; set;}
+
         public override string ToString() => $"Hero Details: \n\t name: {this.HeroName} \n\t hp: {this.HP} \n\t element: {this.ElementType} \n\t superpower: {this.SuperPower.ToString()}";
 
     }

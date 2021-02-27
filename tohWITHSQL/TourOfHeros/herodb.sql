@@ -24,7 +24,8 @@ create table superpowers
     name varchar(50) not null,
     description varchar(100) not null,
 	damage int not null,
-    hero int references heroes(id)
+    -- unique not null for one to one!!!
+    hero int UNIQUE NOT NULL references heroes(id) on delete cascade
 );
 
 --Adding seed data

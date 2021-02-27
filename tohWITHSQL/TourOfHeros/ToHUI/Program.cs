@@ -17,6 +17,8 @@ namespace ToHUI
         static void Main(string[] args)
         {
             //get the config file
+            // the configuration is a collection of key/value pairs that contains info for connecting to our database
+            // could also contain things like website ips, api stuff, etc.
             var configuration = new ConfigurationBuilder()
             .SetBasePath(Directory.GetCurrentDirectory())
             .AddJsonFile("appsettings.json")

@@ -9,7 +9,7 @@ namespace ToHDL.Entities
     {
         public Hero()
         {
-            Superpowers = new HashSet<Superpower>();
+            Superpower = new HashSet<Superpower>();
         }
 
         public int Id { get; set; }
@@ -18,6 +18,8 @@ namespace ToHDL.Entities
         public int? ElementType { get; set; }
 
         public virtual ElementType ElementTypeNavigation { get; set; }
-        public virtual ICollection<Superpower> Superpowers { get; set; }
+        public virtual ICollection<Superpower> Superpower { get; set; }
     }
 }
+
+// ONE TO ONE IS
