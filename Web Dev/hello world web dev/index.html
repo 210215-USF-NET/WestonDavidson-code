@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!--
+        a head tag is different from your heading and header
+        this just contains metadata
+        stuff like what charset, title of page, js libraries, fonts etc.
+    -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hello Web!</title>
+<!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" 
+integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <style>
+        div{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        body{
+            font-family: 'Courier New', Courier, monospace;
+            background-color: lightgray;
+        }
+        .jumbotron{
+            background-color: lightslategray;
+        }
+    </style>
+    <link rel="stylesheet" href="index.css">
+  </head>
+  <body>
+    <!--
+        body contains actual stuff you're displaying on the page - stuff end user would interact with and see
+    -->
+    <h1 class="jumbotron">Lecture on HTML, CSS, and Bootstrap</h1>
+    <div class="container">
+      This is a div tag
+      <!--
+            the div is your generic block element.
+        -->
+      <div class="container">
+        <h1>Common Tags</h1>
+        <div class="container">this is a div tag</div>
+        <div class="container">It's a generic block element</div>
+        <div class="container">that means, it takes up vertical space</div>
+        <div class="container">
+          It's width is as wide as your viewport (when not manipulated)
+        </div>
+        <div class="container">
+          <span> This is a span, a generic inline element. </span>
+          <span>
+            It doesn't take vertical space. It exists side by side with other
+            elements if space permits.
+          </span>
+        </div>
+
+        <div class="container">
+          <p>This is a paragraph tag, also a block element</p>
+          <article>
+            This is an article, like a pragraph, but takes less vertical space.
+            (discovered by experimentation)
+          </article>
+          <a href="https://agilemanifesto.org" target="_blank"
+            >This is a quick link to our page to beat!</a
+          >
+        </div>
+        <div class="container">
+          <h3>Difference between head, header, and heading?</h3>
+          <p>
+            The head tag encapsulates meta information about our html resource
+          </p>
+          <header>
+            The header header tag is a semantic element that describes a header
+          </header>
+          <p>
+            the heading h tag is a way of formatting how things are presented,
+            like a paragraph heading. It has 6 levels
+          </p>
+          <h1>level 1</h1>
+          <h2>level 2</h2>
+          <h3>level 3</h3>
+          <h4>level 4</h4>
+          <h5>level 5</h5>
+          <h6>level 6</h6>
+
+          <p>why even use header element?</p>
+          <p>
+            we shouldn't use tags to make things look different because HTML
+            shouldn't determine how things look, just what they are
+          </p>
+        </div>
+        <div class="container">
+          <h3>Presenting a collection of stuff</h3>
+          <div class="container">
+            <h4>Lists</h4>
+            <ol>
+              <li>This is an ordered list</li>
+              <li>notice the numbers!</li>
+            </ol>
+            <ul>
+              <li>this is an unordered list</li>
+              <li>notice the lack of numbers!</li>
+            </ul>
+          </div>
+          <div class="container">
+            <h4>Tables</h4>
+            <table class="table">
+              <thead>
+                <th>Name</th>
+                <th>Favorite Color</th>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Marielle</td>
+                  <td>Green</td>
+                </tr>
+                <tr>
+                  <td>Jacob</td>
+                  <td>Blue</td>
+                  <td>Yellow</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <h2>Attributes</h2>
+        <p class="attribute">
+          Some tags, like the img tag use attributes to define the the value of
+          what they're presenting (img src="where image is located")
+          <br />
+          The href attribute of the anchor tag tells you where the anchor leads.
+          <br/>
+          You can also use these attributes to identify your elements
+          <ul>
+              <caption>2 common Ways to identify an element using attributes</caption>
+              <li>ID - a unique way to identify an element</li>
+            <li>class - lets you identify multiple elements at once</li>
+        </ul>
+        You need to identify them to know where to apply certain rules in CSS or behavior in JS.
+        Then again, you can also use the style attribute to apply style to your elements.
+        <p style ="color: brown;">using style attribute, I've changed the color of the font</p>
+        </p>
+      </div>
+    </div>
+    <div class="container csstalk">
+        <h1>CSS</h1>
+        <p>We use CSS to apply styling to webpages</p>
+        <div class="container">
+            <h2>Ways to include CSS in your HTML</h2>
+            <ol>
+                <li>
+                    inline
+                </li>
+                <li>
+                    internal
+                </li>
+                <li>
+                    external
+                </li>
+            </ol>
+        </div>
+        <div class="container">
+            <h2>Different Types of Selectors</h2>
+            <h3>Simple Selectors</h3>
+            <ul>
+                <li>
+                    tag/element
+                    <ul>
+                        <li>uses the tag name to identify the element</li>
+                        <li>This will affect all elements with that tag name</li>
+                    </ul>
+                </li>
+                <li>
+                    Class
+                    <ul>
+                        <li>uses the class name to style a group of elements</li>
+                        <li>denoted by .className</li>
+                    </ul>
+                </li>
+                <li id = "id">
+                    ID
+                    <ul>
+                        <li>uses a unique id</li>
+                        <li>denoted by #id</li>
+                    </ul>
+
+                </li>
+                <li class="pseudo">
+                    Pseudo-class
+                    <ul>
+                        <li>specific keyword at the end of the selector used to style elements when it is at a certain state</li>
+                        <li>:active, :hover, etc...</li>
+                    </ul>
+                </li>
+                <li>
+                    Pseudo-element
+                    <ul class="pel">
+                        <li>used to style specific parts of an element</li>
+                        <li>insert content before or after, style first letter, first line, etc.</li>
+                        <li>::before, ::after, ::firstline, ::firstletter</li>
+                    </ul>
+                </li>
+            </ul>
+            <h3>Combinator Selectors</h3>
+            <ul>
+                <li>Child Descendant</li>
+                <li>Sibling</li>
+                <li>Attribute Selectors</li>
+                <li>Multiple Selectors</li>
+            </ul>
+            <h3>Wild card selector</h3>
+            <ul>
+                <li>Just the *</li>
+                <li>Styles everything, all elements with the given rules</li>
+            </ul>
+        </div>
+    </div>
+    <div class="container">
+        <h1>BootstrapJS</h1>
+        <p>CSS framework, responsive, mobile first</p>
+    </div>
+  </body>
+</html>
