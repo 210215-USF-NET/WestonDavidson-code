@@ -15,7 +15,7 @@ namespace ToHDL
 
         Hero DeleteHero(Hero hero2BDeleted);
 
-        void UpdateHero(Hero hero2BUpdated);
+        Hero UpdateHero(Hero hero2BUpdated);
         
 
     }

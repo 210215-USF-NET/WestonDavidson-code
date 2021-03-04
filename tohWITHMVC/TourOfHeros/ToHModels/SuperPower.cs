@@ -10,11 +10,12 @@ namespace ToHModels
 
         public string Name {get; set;}
 
-        public int? Id {get; set;}
+        public int Id {get; set;}
         
         public override string ToString() => $"\n\t name: {this.Name} \n\t damage: {this.Damage} \n\t description: {this.Description}";
 
-
+        //added a heroID here to avoid ambiguous relationships/how ef core detects relationships
+        public int HeroId { get; set; }
         
     }
 }
