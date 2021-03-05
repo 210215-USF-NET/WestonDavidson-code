@@ -59,6 +59,7 @@ namespace ToHMVC.Models
                 ElementType = hero2BCasted.ElementType,
                 SuperPower = new SuperPower
                 {
+                    Id = hero2BCasted.HeroId,
                     Name = hero2BCasted.SuperPowerName,
                     Description = hero2BCasted.Description,
                     Damage = hero2BCasted.Damage

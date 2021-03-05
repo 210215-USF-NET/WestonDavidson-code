@@ -24,3 +24,10 @@
 - the actions related to it. 
 - Use the HeroCRVM as a viewmodel
 
+# Things we'll learn next week:
+- cicd build pipeline
+- how to publish app to internet
+
+- we should look into 20 unit tests
+- due on march 17th
+- an mvp for p1 has to be functional and has to be deployed. Data should be persisted to a db.

@@ -86,18 +86,27 @@ namespace ToHMVC.Controllers
         [HttpPost]
         [ValidateAntiForgeryToken]
         public ActionResult Edit(HeroEditVM hero2BUpdated)
-        {
+        {//Model State isvalid literally means model data is valid
             if (ModelState.IsValid)
             {
-                _heroBL.UpdateHero(_mapper.cast2HeroEditVM(hero2BUpdated));
+                try
+                {
+                    _heroBL.UpdateHero(_mapper.cast2HeroEditVM(hero2BUpdated));
 
 
-                return RedirectToAction(nameof(Index));
+                    return RedirectToAction(nameof(Index));
+                }
+                catch
+                {
+                    return View();
+                }
+
 
             }
+            return View();
 
 
-            return RedirectToAction(nameof(Index));
+
 
 
         }
