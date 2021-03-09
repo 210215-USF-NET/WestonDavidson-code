@@ -4,7 +4,7 @@ FROM mcr.microsoft.com/dotnet/sdk:5.0 as build
 # baby of mkdir and cd (it makes the directory if it doesn't exist and then navigates to that directory)
 WORKDIR /app
 
-# copy the sln and csproj files first to restor them and the deps
+# copy the sln and csproj files first to restore them and the deps
 COPY *.sln ./
 COPY ToHBL/*.csproj ToHBL/
 COPY ToHDL/*.csproj ToHDL/
@@ -43,6 +43,6 @@ FROM mcr.microsoft.com/dotnet/aspnet:5.0 as runtime
 WORKDIR /app
 #from our old app build, we just want to copy over the publish folder - this contains the deployable version of our app
 # from earlier stage, get publish folder
-copy --from=build /app/publish ./
+COPY --from=build /app/publish ./
 #then, say hey, run this executable on this container
-cmd ["dotnet", "ToHMVC.dll"]
+CMD ["dotnet", "ToHMVC.dll"]
