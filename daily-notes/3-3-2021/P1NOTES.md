@@ -31,3 +31,12 @@
 - we should look into 20 unit tests
 - due on march 17th
 - an mvp for p1 has to be functional and has to be deployed. Data should be persisted to a db.
+
+
+# more p1 notes - 3 5 2021
+- LOOK INTO PARTIAL VIEWS, IT WILL HELP A LOT
+- use sessions to persist data between multiple request response lifecycles!!
+- to set up sessions you set it up in your startup.cs
+    - app.UseSession()
+    - and then in services you put services.AddSession();
+- topic list in the trainer github for p1 requirements and topics that we will need to review for QC
