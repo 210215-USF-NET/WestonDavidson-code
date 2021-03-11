@@ -37,3 +37,8 @@
 
 - feature flags can be used to see if performance or buggy code exists in a new feature
     - by rolling out features to small user groups, you can ease any weird issues that might occur when a feature is rolled out to the general populace
+
+look into topics:
+- infrastructure as code
+- microservices
+- read microsoft docs on what are devops - azure devops
