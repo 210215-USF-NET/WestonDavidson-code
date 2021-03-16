@@ -33,3 +33,24 @@
     - or create service first and then WSDL after
 - service is basically the concrete class, while the wsdl is the interface
 - some IDEs let you generate a wsdl file for your web service
+
+# SOAP message
+- if the wsdl is the menu, the message is your actual order
+- an xml document containing
+    - an envelope element that identitifes the xml document as a soap message
+    - a header that contains header info
+    - a body element that contains call and response info
+    - a fault element containing errors and status info - all the exceptions that occurred
+        - we define exceptions using these faults
+
+# XML namespace
+- soap services rely heavily on XML
+- xml namespaces are used to declare tag structure in soap
+- used to format what the service is sexpecting
+- a standardized tag structure helps in parsing data
+
+# creating a soap service
+- to create soap services
+- dotnet core/dotnet 5 doesn't support these
+- wcf is the package to install to make these - wcf service application
+
