@@ -27,3 +27,20 @@
 okta, auth0 any identity as a service provider for authentication
 - systems must be async
 - sooner or later we will need to use this security topic with our REST API - CORS!!!
+- httpclient seems to help a decent amount for verifying stuff. used to make requests to other services from an asp.net api
+- look into ignoring folders containing boilerplate/scaffolded code
+- send pdf of the proposal - a proper project proposal
+- implement scrum, have a project board
+
+
+- stuff to include on p0
+    - user stories
+    - tables - what each tables do
+        - present an erd
+    - overview
+    - erd
+    - 
+
+[Project Name] is a step sequencer that allows users to create, play back, save, and export music they've created in [Project Name]. The sequencer will rely heavily on the Tone.js API for front-end logic. Users will be able to create accounts and persist sequencer settings between user sessions. [Project Name] will allow users to dynamically add and remove samples from their sequencer.
+
+bpm slider
