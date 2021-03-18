@@ -69,3 +69,5 @@
     - consider who you want on ur team :flushed_emoji:
 - a scrum master is different than a team lead - it's the person who leads the standups and updates data in project board etc.
     - checks in with team leads to make sure everyone is on the same page
+
+- a user story is a way of describing requirements that a user would need to have in a system in order to complete a task

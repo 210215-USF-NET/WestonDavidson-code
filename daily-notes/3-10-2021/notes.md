@@ -20,3 +20,6 @@
 - sdlc is a loose term for the process people use to develop code from planning, to development, to construction
 - there are some solid types of sdlc implementations, like waterfall, v-method, big bang
 - agile is the loose idea that communication with clients is more important than 
+
+dynamic testing - occurs during runtime of code, to determine if it's actually 
+static testing - doesn't run our code to perform analysis - example is sonar cloud because it's analyzing code before it's run

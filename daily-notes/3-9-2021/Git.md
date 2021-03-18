@@ -31,3 +31,8 @@
 
 - https://dangitgit.com/
 - good for figuring out how to solve small issues that have occurred during git branch/commit/push processes
+
+- fast forward merge:
+    - when you don't have any merge conflicts
+- non fast forward
+    - when there's conflictss
