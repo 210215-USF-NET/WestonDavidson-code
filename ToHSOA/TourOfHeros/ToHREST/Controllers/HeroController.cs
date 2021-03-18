@@ -4,11 +4,13 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using ToHBL;
+using ToHModels;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
 namespace ToHREST.Controllers
 {
+    //we're using attribute routing to specify what pattern to access for our route
     [Route("api/[controller]")]
     [ApiController]
     public class HeroController : ControllerBase
@@ -21,34 +23,66 @@ namespace ToHREST.Controllers
         }
         // GET: api/<HeroController>
         [HttpGet]
-        public IActionResult GetHeroes()
+        public async Task<IActionResult> GetHeroesAsync()
         {
-            return Ok(_heroBL.GetHeroes());
+            //we use status codes like OK to wrap our code
+            return Ok(await _heroBL.GetHeroesAsync());
         }
 
         // GET api/<HeroController>/Spiderman
         [HttpGet("{name}")]
-        public IActionResult GetHeroById(string name)
+        [Produces("application/json")]
+        public async Task<IActionResult> GetHeroByNameAsync(string name)
         {
-            return Ok(_heroBL.GetHeroByName(name));
+            var hero = await _heroBL.GetHeroByNameAsync(name);
+            if (hero == null) return NotFound();
+            return Ok(hero);
         }
 
         // POST api/<HeroController>
         [HttpPost]
-        public void Post([FromBody] string value)
+        [Consumes("application/json")]
+        public async Task<IActionResult> AddAHeroAsync([FromBody] Hero hero)
         {
+            try
+            {
+                await _heroBL.AddHeroAsync(hero);
+                return CreatedAtAction("AddAHero", hero);
+            }
+            catch
+            {
+                return StatusCode(400);
+            }
         }
 
         // PUT api/<HeroController>/5
         [HttpPut("{id}")]
-        public void Put(int id, [FromBody] string value)
+        public async Task<IActionResult> UpdateHeroAsync([FromBody] Hero hero)
         {
+            try
+            {
+                await _heroBL.UpdateHeroAsync(hero);
+                return NoContent();
+            }
+            catch
+            {
+                return StatusCode(500);
+            }
         }
 
-        // DELETE api/<HeroController>/5
-        [HttpDelete("{id}")]
-        public void Delete(int id)
+        // DELETE api/<HeroController>/Thanos
+        [HttpDelete("{name}")]
+        public async Task<IActionResult> DeleteAsync(string name)
         {
+            try
+            {
+                await _heroBL.DeleteHeroAsync(await _heroBL.GetHeroByNameAsync(name));
+                return NoContent();
+            }
+            catch
+            {
+                return StatusCode(500);
+            }
         }
     }
 }

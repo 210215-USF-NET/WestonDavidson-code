@@ -25,3 +25,5 @@
 - once teams are finalized, submit team members and proposal with a list of functionalities that we will use
 - 3rd party API AS WELL OTHER THAN authentication
 okta, auth0 any identity as a service provider for authentication
+- systems must be async
+- sooner or later we will need to use this security topic with our REST API - CORS!!!
