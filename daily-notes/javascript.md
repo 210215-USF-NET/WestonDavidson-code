@@ -36,6 +36,13 @@
         - false, undefined, null, 0, NaN, empty string
 - truthy values
     - anything else
+- undefined means you haven't defined a value yet, but null means it's been defined and set to null;
+- == checks if value is same, === is checking type
+- == converts type (type coersion)
+
+- difference if you use closer with a basic function as opposed to use it with an IIFE?
+    - iffe's are immediately invoked and values are shared, whereas with basic functions you can make new closures to have different instances of the basic function running.
+
 
 # functions in js
 - basic function
@@ -49,4 +56,14 @@
     - pronounced iffy
     - immediately invoked function expression
 
-    
+
+# encapsulation in js
+- since js is not OO, it has no access modifiers
+- you can still achieve encapsulation using closure
+- closure is when you have a function within a function
+
+
+# inheritance in JS
+- before ES6, classes weren't a thing in js, but there was such a thing as prototypal inheritance
+- there are now classes in js!! They basically abstract prototypes into keywords that relate to other oop languages.
+
