@@ -1,3 +1,4 @@
+using Amazon.S3;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -47,6 +48,10 @@ namespace ToHREST
                         );
                 }
                 );
+
+            var options = Configuration.GetAWSOptions();
+            IAmazonS3 client = options.CreateServiceClient<IAmazonS3>();
+
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "ToHREST", Version = "v1" });
@@ -56,6 +61,9 @@ namespace ToHREST
             //this basically says - herorepodb has a dependency on an iherorepository
             services.AddScoped<IHeroRepository, HeroRepoDB>();
             services.AddScoped<IHeroBL, HeroBL>();
+
+            //add aws services to our system - now our controllers can access these services as needed
+            services.AddAWSService<IAmazonS3>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
