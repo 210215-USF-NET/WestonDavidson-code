@@ -42,3 +42,10 @@
 - decorators
     - used to distinguish the functionality of your classes. Like @NgModule - declares a class as a module.
     - decorators
+
+# directives
+- help you with dom manipulation
+- we have attribute directives
+- and structural directives! add or remove or replace elements in the dom
+- components are technically structural directives because they change the structure of your page!
+- we will be mostly using structural directives (ngfor, ngif, ngswitch)
