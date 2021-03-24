@@ -44,3 +44,39 @@ function PrintHeroesTable(heroes : hero[]) : void
 
     }
 }
+
+function AddAHero(): void
+{
+    let hero2Add : hero = {
+        heroName : document.querySelector<HTMLInputElement>('#heroName')!.value,
+        hp : parseInt(document.querySelector<HTMLInputElement>('#hp')!.value),
+        elementType: parseInt(document.querySelector<HTMLSelectElement>('#elementType')!.value),
+        superPower:
+        {
+            name : document.querySelector<HTMLInputElement>('#superPowerName')!.value,
+            description : document.querySelector<HTMLInputElement>('#superPowerDescription')!.value,
+            damage : parseInt(document.querySelector<HTMLInputElement>('#superPowerDamage')!.value)
+        }
+    } 
+    let xhr : XMLHttpRequest = new XMLHttpRequest();
+    xhr.onreadystatechange = function ()
+    {
+        if(this.readyState == 4 && this.status >199 && this.status < 300)
+        {
+            console.log('new hero has been added!');
+            document.querySelector<HTMLInputElement>('#heroName')!.value = '';
+            document.querySelector<HTMLInputElement>('#hp')!.value = '';
+            document.querySelector<HTMLSelectElement>('#elementType')!.value = '';
+            document.querySelector<HTMLInputElement>('#superPowerName')!.value = '';
+            document.querySelector<HTMLInputElement>('#superPowerDescription')!.value = '';
+            document.querySelector<HTMLInputElement>('#superPowerDamage')!.value = '';
+            GetAllHeroes();
+
+        }
+
+    }
+    xhr.open("POST", "https://localhost:44352/api/Hero", true);
+    xhr.setRequestHeader('Content-Type', 'application/json');
+    xhr.send(JSON.stringify(hero2Add));
+
+}

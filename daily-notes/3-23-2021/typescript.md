@@ -44,3 +44,21 @@
     - able to alias imports, import multiple modules from a single script file, only import types etc.
     - helps in organizing your code in their own files to use them in different places
 - export and import keywords can let you use or send something to another file
+
+
+## achievements yesterday
+- Completed our REST API with most basic CRUD implementations for most aspects of the project
+    - this will very likely need to be frequently revised to ensure accurate implementation for our project needs
+    - fixed bugs involving our API controller (Jack)
+    - completed implementation of BL and DL, reworked some methods to accept different types of parameters (Weston & Jack)
+- Frontend team members began implementing front-end design in separate repo
+    - completed a proof-of-concept drum machine demo to build off of as the sequencer progresses (David)
+    - began reworking a pre-existing angular template to meet project needs (Tate)
+## Goals for Today
+    - deploy our backend service
+    - seed DB data
+    - set up OKTA authentication for service
+## Current Blockers
+    - amazon S3 bucket setup for media file storage/retrieval
+        - we are still working on this, we have an AWS account + storage ready to go and understand how to embed media for playback in our application
+        - we need to figure out uploading/removing from bucket
