@@ -49,3 +49,13 @@
 - and structural directives! add or remove or replace elements in the dom
 - components are technically structural directives because they change the structure of your page!
 - we will be mostly using structural directives (ngfor, ngif, ngswitch)
+
+# observables
+- okta uses observables to see who is logged in and who isn't
+- observables are like promises in that they both represent async operations
+    - BUT, 
+
+
+
+- REVIEW PIPES, FILTERS, AND EVENTS ON OUR OWN
+- ALSO REVIEW PROMISES VS OBSERVABLES

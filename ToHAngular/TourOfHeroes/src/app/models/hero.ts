@@ -6,6 +6,7 @@ export interface hero
     heroName: string,
     hp: number,
     elementType: element,
-    superPower: superpower
+    superPower: superpower,
+    id: number
     
 }
