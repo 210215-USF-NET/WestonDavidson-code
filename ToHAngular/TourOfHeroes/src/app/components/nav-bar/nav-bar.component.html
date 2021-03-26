@@ -25,5 +25,7 @@
                 </li>
             </ul>
         </div>
+        <span *ngIf="auth.user$ | async as user; then GetUser(user.email)" class="nav-link d-flex" >Hey, {{user.email}}!</span>
+        <app-auth-button></app-auth-button>
     </div>
 </nav>
