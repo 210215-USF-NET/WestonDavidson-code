@@ -37,7 +37,6 @@ SineShop is a store application developed in mind for a chain of stores that sel
 This project is licensed under the MIT License.
 
 
-<<<<<<< HEAD
 - make sure a p3 proposal exists
 
 
@@ -61,6 +60,3 @@ This project is licensed under the MIT License.
       }
     )
   }
-=======
-- make sure a p3 proposal exists
->>>>>>> 0bc42a45391c544818bbfde43f3b6619ef43929b

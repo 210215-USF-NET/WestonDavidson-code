@@ -107,3 +107,10 @@
 - to update an app, use the set image command
 
 # object config file
+- an object config file is a yaml file that determines what you're trying to create, what you want to do with it (kind: Deployment), labels for the object, containers and an image for 
+
+k8s demo after lunch
+won't be back morning part because of qc
+after freds demo center of excellency will have project handoff for us
+by end of day we will have team leads created
+tomorrow morning we have a panel tomorrow at 10am est
