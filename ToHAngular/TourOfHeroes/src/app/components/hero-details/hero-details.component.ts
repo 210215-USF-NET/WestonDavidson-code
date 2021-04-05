@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { hero } from 'src/app/models/hero';
 import { HeroRESTService } from 'src/app/services/hero-rest.service';
 
@@ -14,7 +14,7 @@ export class HeroDetailsComponent implements OnInit {
 
   //an activated route allows us to unpack our route to get query parameters from our route string!
   // allows us to unpack the route, ie get route parameters sent
-  constructor(private heroService : HeroRESTService, private route : ActivatedRoute) {
+  constructor(private heroService : HeroRESTService, private route : ActivatedRoute, private router : Router) {
     this.hero =
     {
       heroName: '',
@@ -25,7 +25,10 @@ export class HeroDetailsComponent implements OnInit {
         name: '',
         description: '',
         damage: 0,
-      }
+        id: 0,
+        heroid: 0
+      },
+      id: 0
       
 
     }
@@ -50,6 +53,24 @@ export class HeroDetailsComponent implements OnInit {
         )
       }
     );
+  }
+  DeleteHero(heroName: string) : void
+  {
+    if(confirm(`Are you sure you want to delete ${heroName}?`).valueOf())
+    {
+      this.heroService.DeleteHero(heroName).subscribe(
+        () =>{
+        alert(`${heroName} has been snapped`);
+        this.router.navigate(['get-heroes']);
+        }
+      );
+    }
+
+  }
+
+  EditHero(heroName: string) : void
+  {
+    this.router.navigate(['edit-hero'], {queryParams: {hero: heroName}})
   }
 
 }
