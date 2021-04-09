@@ -62,9 +62,28 @@ prepare needed documentation to present vision/design for the project
 
 Plans for 5/7/2021
 - discuss TDD, understand workflow of how to approach from a TDD perspective with a large team
-- Kenneth meeting - ask questions about pricing, project goals, etc. probably pretty short
+- Kenneth meeting - ask questions about pricing, project goals, etc. probably pretty short - 2:30 cst
+    - try to prepare notes for this beforehand
 - standup with marielle hopefully
-- what are we going to tackle, talk about testing, then implementing that
 - approach: determine what methods need to be implemented, what dependencies/properties are taken in by these methods, and what the expected output is of these methods.
-- going to need a database for every single service, 7 databases total
-- 
+
+
+- jonathan is in main room
+- tomorrow afternoon finalizing details for p3
+- probably won't be able to be there in the morning
+- thursday might have another k8 session with fred
+- marielle will show us how to deploy to aks on thursday as well - might just have people who are interested come
+
+- friday, marielle will be available most of the day
+- thursday she'll be here as well
+- thursday/friday 1 on 1
+- friday soft skills training session
+
+- when a user selects a sample set to load, a small divider with a name is placed above the sample set and all the samples/tracks therein are loaded
+- users can either delete the divider or delete the sample set entirely from the project
+
+1. create a service for retrieving and sending saved track data
+1. implement service and parse data into the appropriate data structures
+1. create a service that retrieves and posts sample sets
+1. update mixer logic to load in sample sets as a group
+1. 
