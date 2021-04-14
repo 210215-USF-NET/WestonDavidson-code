@@ -46,3 +46,48 @@ tomorrow fred will be here! some time morning and afternoon
 - 4/8/2021
 - testing published first frontend tests
 - 
+
+get the average of all population in city by each city
+- watch the csharp video that douglas posted
+
+
+delegates
+clr
+directives
+http verbs
+ajax
+devop
+
+
+each pattern is going to need
+
+What are delegates: 
+
+Micro services arc vs monolithic arc: 
+
+What is the CLR:
+
+exception handling
+
+what is an observable
+
+structural and attribute directives
+
+What are angular directives:
+
+What are the joins
+
+HTTP Verbs:
+(look these up)
+Post pull or put
+Get
+Delete
+Fetch
+Head
+
+status codes
+200 ok
+300 redirect
+
+average of population in city
+select * where 
