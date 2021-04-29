@@ -1,12 +1,16 @@
 ## 4 sublanguages of sql
 - DDL - data definition language
     - define database schema
+        - CREATE, ALTER, DROP, TRUNCATE
 - DML - data manipulation language
     - deal with manipulating data present in a datbase
+        - INSERT, UPDATE, DELETE, MERGE
 - TCL - transaction control language
     - commands which deal with transactions in the database
+        - COMMIT, ROLLBACK, SAVEPOINT
 - DCL - data control language
     - deals with commands that provide rights, permissions, and other controls through the dbms
+        - GRANT, REVOKE
 
 ## what do you mean by DBMS?
 - a DBMS is a software application that interacts with the user, applications and the database itself to capture and analyse data.
@@ -69,8 +73,8 @@ SELECT GETDATE();
 ## types of normalization
 - 1nf, 2nf, 3nf
 
-- 1nf - records have a single value
-- 2nf - single column primary key
+- 1nf - records have a single value, no duplicate columns
+- 2nf - single column primary key, no partial dependencies
 - 3nf - db is first in 2nf and has no transitive functional dependencies
 - the key, the whole key, and nothing but the key
 
@@ -220,3 +224,5 @@ ORDER BY salary ASC;
     - stuffs the new replacement characters in the specified location
 - REPLACE is used to replace all occurrences of a set of existing characters
     - example: REPLACE(string_expression, search_string, replacement_string)
+
+
